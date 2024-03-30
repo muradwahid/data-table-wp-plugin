@@ -1,0 +1,70 @@
+$primaryColor: #4527a4;
+
+.prefixNowEditing {
+  outline: 2px solid $primaryColor;
+}
+
+.prefixInspectorInfo {
+  padding: 6px;
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+.table-header-panel-wrapper {
+  .bpdt-addItems {
+    display: 'flex';
+    justify-content: 'center';
+    margin-top: '5px';
+  }
+  .table-body-removeRow {
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: space-between;
+    gap:13px;
+    .remove-row {
+      border: none;
+      padding: 7px 20px;
+      background: #bd434f;
+      color: white;
+      transition:background .2s ease-in-out;
+      cursor: pointer;
+      &:hover{
+        background: #bb2d3b;
+      }
+    }
+    .add-col{
+            border: none;
+      padding: 7px 20px;
+      background: #3858e9;
+      color: white;
+      cursor: pointer;
+      .addButton{
+        color: white;
+      }
+    }
+  }
+}
+.panel-header-title {
+  .panel-header-single-icon {
+    border-left: 1px solid #ccc;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    cursor: pointer;
+    font-size: 17px;
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+}
+.tablePanelStyle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}

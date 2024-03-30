@@ -1,0 +1,23 @@
+.panel-custom-color-control-container {
+  border-radius: 5px;
+  width: 250px;
+  .panel-custom-tab {
+    display: flex;
+    justify-content: flex-end;
+    .custom-single-tab {
+      padding: 3px 6px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+    }
+    .custom-single-tab:last-child {
+      border-left: none;
+    }
+    .custom-single-tab:hover {
+      background: #ccc;
+    }
+    .active {
+      background: #006ba1;
+      color: #e7e7e7;
+    }
+  }
+}

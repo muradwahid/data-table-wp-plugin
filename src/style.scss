@@ -1,0 +1,98 @@
+$primaryColor: #4527a4;
+
+// Common CSS
+html {
+  scroll-behavior: smooth;
+}
+
+// Dashicon
+.dashicons {
+  font-family: dashicons !important;
+}
+
+// Block Name
+.wp-block-b-blocks-data-table,.wp-block-bpdt-data-table{
+  * {
+    box-sizing: border-box;
+  }
+  .bpdt-table-wrapper {
+    border-collapse: separate;
+    // border-spacing: 0;
+    table-layout: auto;
+    width: 100%;
+    // border: 1px solid #ddd;
+    background: #ccc;
+    .table-header {
+      text-align: left;
+      // border-collapse: collapse;
+      th {
+        // border-collapse: collapse;
+        background: blue;
+        color: white;
+        position: relative;
+        .table-header-sortIcon {
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          transform: translateY(-50%);
+          display: flex;
+          flex-direction: column;
+          svg:first-child {
+            margin-bottom: -4px;
+          }
+          svg:last-child {
+            margin-top: -4px;
+          }
+        }
+      }
+    }
+    .bpdt-table-body {
+      tr {
+        td {
+          padding: 12px 10px;
+          p {
+            margin: 0px;
+          }
+        }
+        .removeColumn{
+          position: relative;
+          border: 2px solid #c93636;
+          .bpdt-bodydeleteIcon{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            color: #c93636;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .bpdt-data-table-addRow {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-top: 0px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background-color: #e5e5e5;
+    }
+    button {
+    border: none;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 5px 3px #cccccc8c;
+    cursor: pointer;
+    font-size: 12px;
+    }
+  }
+}

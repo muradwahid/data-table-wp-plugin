@@ -1,0 +1,28 @@
+.tab-panel-container {
+  display: flex;
+  .single-tab {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    align-items: center;
+    padding: 8px 0;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+    .dashicon {
+      font-size: 20px;
+    }
+  }
+  .single-tab:hover {
+    background-color: #f1f2f3;
+  }
+  .is-tab-active {
+    border-bottom: 3px solid black;
+  }
+  .deActive-tab-color {
+    color: #515962;
+  }
+  .active-tab-color {
+    color: #0c0d0e;
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "apiVersion": "1",
+  "name": "b-blocks/data-table",
+  "description":"Data Table allows you to create and manage tables on your website.",
+  "title": "Data Table",
+  "category": "widgets",
+  "keywords": ["data table", "table", "data"],
+  "textdomain": "b-blocks",
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": ""
+    },
+    "cId": {
+      "type": "string",
+      "default": ""
+    },
+    "content": {
+      "type": "string",
+      "default": "Lorem text should be replaced with real text"
+    },
+    "tableSort": false,
+    "headings": {
+      "type": "array",
+      "default": [
+        {
+          "clName": "Table Header 1",
+          "clSpan": "1",
+          "width": "0%",
+          "enableIcon": false,
+          "icon": "",
+          "image": "",
+          "iconType": "none",
+          "size": 20,
+          "toggle": false
+        },
+        {
+          "clName": "Table Header 2",
+          "clSpan": "1",
+          "width": "0%",
+          "enableIcon": false,
+          "icon": "",
+          "image": "",
+          "iconType": "none",
+          "size": 20,
+          "toggle": false
+        }
+      ]
+    },
+    "bodyItems": {
+      "type": "array",
+      "default": [
+        [
+          {
+            "clSpan": 1,
+            "contentType": "edit",
+            "rowSpan": 1,
+            "icon": "",
+            "text": "Content 1",
+            "link": "",
+            "toggle": false
+          },
+          {
+            "clSpan": 1,
+            "contentType": "edit",
+            "rowSpan": 1,
+            "icon": "",
+            "text": "Content 2",
+            "link": "",
+            "toggle": false
+          }
+        ],
+        [
+          {
+            "clSpan": 1,
+            "contentType": "edit",
+            "rowSpan": 1,
+            "icon": "",
+            "text": "Content 1",
+            "link": "",
+            "toggle": true
+          },
+          {
+            "clSpan": 1,
+            "contentType": "edit",
+            "rowSpan": 1,
+            "icon": "",
+            "text": "Content 2",
+            "link": "",
+            "toggle": false
+          }
+        ]
+      ]
+    },
+    "table": {
+      "type": "object",
+      "default": {
+        "width": { "desktop": "100%", "tablet": "100%", "mobile": "100%" },
+        "alignment": "left",
+        "borderSeparator": true
+      }
+    },
+    "headerStyle": {
+      "type": "object",
+      "default": {
+        "bRadius": 0,
+        "padding": {
+          "desktop": {
+            "top": "15px",
+            "right": "15px",
+            "bottom": "15px",
+            "left": "15px"
+          },
+          "tablet": {
+            "top": "15px",
+            "right": "15px",
+            "bottom": "15px",
+            "left": "15px"
+          },
+          "mobile": {
+            "top": "15px",
+            "right": "15px",
+            "bottom": "15px",
+            "left": "15px"
+          }
+        },
+        "color": { "normal": "#fff", "hover": "#fff" },
+        "bg": { "normal": "#0000ff", "hover": "#0000ff" },
+        "borderType": { "normal": "default", "hover": "default" },
+        "border": {
+          "normal": { "width": 1, "color": "#000" },
+          "hover": { "width": 1, "color": "#000" }
+        },
+        "iconSize": { "desktop": 25, "tablet": 25, "mobile": 25 },
+        "iconSpace": { "desktop": 10, "tablet": 10, "mobile": 10 },
+        "iconColor": "#fff",
+        "titleAlign": "left"
+      }
+    },
+    "bodyStyle": {
+      "type": "object",
+      "default": {
+        "oddCell": {
+          "normal": { "color": "#000", "bg": "" },
+          "hover": { "color": "#000", "bg": "" }
+        },
+        "evenCell": {
+          "normal": { "color": "#000", "bg": "" },
+          "hover": { "color": "#000", "bg": "" }
+        },
+        "borderType": { "normal": "default", "hover": "default" },
+        "border": {
+          "normal": { "width": 1, "color": "#000" },
+          "hover": { "width": 1, "color": "#000" }
+        },
+        "padding": {
+          "desktop": {
+            "top": "15px",
+            "right": "15px",
+            "bottom": "15px",
+            "left": "15px"
+          },
+          "tablet": {
+            "top": "15px",
+            "right": "15px",
+            "bottom": "15px",
+            "left": "15px"
+          },
+          "mobile": {
+            "top": "15px",
+            "right": "15px",
+            "bottom": "15px",
+            "left": "15px"
+          }
+        },
+        "linkColor": { "normal": "#4949bd", "hover": "#4949bd" },
+        "textAlign": { "desktop": "left", "tablet": "left", "mobile": "left" },
+        "icon": {
+          "size": { "desktop": 25, "tablet": 25, "mobile": 25 },
+          "color": { "normal": "#4949bd", "hover": "#4949bd" }
+        }
+      }
+    }
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "html": false
+  },
+  "example": {
+    "attributes": {
+      "preview": true,
+      "columns": {
+        "desktop": 1,
+        "tablet": 1,
+        "mobile": 1
+      }
+    }
+  },
+  "editorScript": "file:./../dist/editor.js"
+}
