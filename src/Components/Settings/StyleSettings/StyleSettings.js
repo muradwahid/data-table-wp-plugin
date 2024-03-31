@@ -40,7 +40,7 @@ const StyleSettings = ({ attributes, setAttributes }) => {
           <Device
             onChange={(value) => setWidthDevice(value)}
             device={widthDevice}
-            style={{ position: 'absolute', top: '0', left: '45px' }}
+            style={{ position: 'absolute',left: '45px' }}
           />
           <span>Width</span>
           <UnitControl

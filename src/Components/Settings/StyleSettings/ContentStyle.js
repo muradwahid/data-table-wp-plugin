@@ -123,7 +123,7 @@ const ContentStyle = ({ attributes, setAttributes }) => {
             <Device
               device={alignDevice}
               onChange={(value) => setAlignDevice(value)}
-              style={{ position: 'absolute', top: '5px', left: '125px' }}
+              style={{ position: 'absolute', top: '5px', left: '70px' }}
             />
             <div>
               <div

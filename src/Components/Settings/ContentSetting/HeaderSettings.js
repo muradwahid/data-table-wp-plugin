@@ -15,6 +15,7 @@ import {
   ToggleControl,
   __experimentalUnitControl as UnitControl,
 } from '@wordpress/components';
+import { PanelRepeater, SortableProvider } from 'bpl-gutenberg-panel';
 import { produce } from 'immer';
 import placeholderImage from '../../../../assets/icons/placeholder.png';
 import starIcon from '../../../../assets/icons/starIcon.png';
@@ -318,7 +319,6 @@ const HeaderSettings = ({ attributes, setAttributes }) => {
       }),
     });
   };
-
   return (
     <PanelBody
       title={__('Header', 'b-blocks')}
@@ -329,7 +329,9 @@ const HeaderSettings = ({ attributes, setAttributes }) => {
         onChange={(value) => setAttributes({ tableSort: value })}
         checked={tableSort}
       />
+
       <div className="table-header-panel-wrapper">
+
         <div className={`bplSortableList`}>
           <SortableList
             removeItem={removeItem}

@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "@tinymce/tinymce-react": "^5.0.0",
-    "bpl-gutenberg-panel": "^0.0.13",
+    "bpl-gutenberg-panel": "^0.0.25",
     "immer": "^10.0.4",
     "react-sortable-hoc": "^2.0.0"
   }
