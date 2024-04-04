@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-02-21T08:32:29+00:00\n"
+"POT-Creation-Date: 2024-04-04T09:40:22+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.8.1\n"
 "X-Domain: data-table\n"
@@ -19,7 +19,7 @@ msgid "Data Table"
 msgstr ""
 
 #. Description of the plugin
-msgid "Description of the Data Table."
+msgid "Data Table allows you to create and manage tables on your website.."
 msgstr ""
 
 #. Author of the plugin
@@ -28,179 +28,4 @@ msgstr ""
 
 #. Author URI of the plugin
 msgid "http://bplugins.com"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:3712
-msgid "Column Name"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:3719
-msgid "Column Span"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:3737
-msgid "WIDTH"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:3747
-msgid "Enable Header Icon"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:3772
-msgid "Header icon type"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:3815
-msgid "Choose Image"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:3962
-msgid "Header"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:3966
-msgid "Enable Table Sorting"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:4832
-msgid "Col Span"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:4852
-msgid "Row Span"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:4882
-msgid "Content Type"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:5010
-msgid "Body"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:5300
-msgid "Body Style"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:5307
-msgid "Color (Odd Row)"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:5313
-msgid "Background (Odd Row)"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:5318
-msgid "Color (Even Row)"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:5324
-msgid "Background (Even Row)"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:5330
-#: dist/editor.js:5542
-msgid "Border Type"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:5340
-#: dist/editor.js:5552
-msgid "Border Width"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:5348
-#: dist/editor.js:5560
-msgid "Border Color"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:5373
-msgid "Link Color"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:5402
-#: dist/editor.js:5734
-msgid "Alignment"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:5443
-msgid "Icon Size"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:5454
-#: dist/editor.js:5601
-msgid "Icon Color"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:5509
-msgid "Header Style"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:5531
-msgid "Color"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:5536
-msgid "Background"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:5624
-msgid "Title Alignment"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:5700
-msgid "General Style"
-msgstr ""
-
-#: dist/editor.js:15
-#: dist/editor.js:5769
-msgid "Separate Border"
-msgstr ""
-
-#: inc/block.json
-msgctxt "block title"
-msgid "Data Table"
-msgstr ""
-
-#: inc/block.json
-msgctxt "block keyword"
-msgid "data table"
-msgstr ""
-
-#: inc/block.json
-msgctxt "block keyword"
-msgid "table"
-msgstr ""
-
-#: inc/block.json
-msgctxt "block keyword"
-msgid "data"
 msgstr ""

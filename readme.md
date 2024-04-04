@@ -9,13 +9,11 @@ Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Description of the Data Table
-
-- Data Table is a WordPress plugin that allows you to create and manage tables on your website. It provides an easy-to-use interface and a wide range of features, making it suitable for both beginners and experienced users.
+Data Table is a WordPress plugin for creating and managing tables on your site. Easy-to-use with powerful features!
 
 == Description ==
 
-- Data Table is a powerful and versatile plugin that allows you to create and manage tables on your WordPress website with ease. It is suitable for a wide range of use cases, including displaying data, creating price lists, and building interactive tables. its user-friendly interface and powerful features, Data Table is the perfect plugin for creating and managing tables on your WordPress website.
+Data Table is a powerful and versatile plugin that allows you to create and manage tables on your WordPress website with ease. It is suitable for a wide range of use cases, including displaying data, creating price lists, and building interactive tables. its user-friendly interface and powerful features, Data Table is the perfect plugin for creating and managing tables on your WordPress website.
 
 **[Demos](https://bblockswp.com/demo/data-table)**
 
