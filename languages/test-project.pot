@@ -9,23 +9,27 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-04-04T09:40:22+00:00\n"
+"POT-Creation-Date: 2024-06-06T05:04:35+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.8.1\n"
+"X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: data-table\n"
 
 #. Plugin Name of the plugin
+#: D:\wp\websites\my-plugins\app\public\wp-content\plugins\data table\index.php
 msgid "Data Table"
 msgstr ""
 
 #. Description of the plugin
+#: D:\wp\websites\my-plugins\app\public\wp-content\plugins\data table\index.php
 msgid "Data Table allows you to create and manage tables on your website.."
 msgstr ""
 
 #. Author of the plugin
+#: D:\wp\websites\my-plugins\app\public\wp-content\plugins\data table\index.php
 msgid "bPlugins LLC"
 msgstr ""
 
 #. Author URI of the plugin
+#: D:\wp\websites\my-plugins\app\public\wp-content\plugins\data table\index.php
 msgid "http://bplugins.com"
 msgstr ""

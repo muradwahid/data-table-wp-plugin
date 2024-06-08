@@ -5,7 +5,7 @@ import React, { Fragment, useState } from 'react';
 import SVG from 'react-inlinesvg';
 import placeholderImg from '../../../../assets/icons/placeholder.png';
 import starIcon from '../../../../assets/icons/starIcon.svg';
-import { plusIcon } from '../../../utils/icons';
+import { PlusIcon } from '../../../utils/icons';
 const Table = ({ attributes, setAttributes, setFirstIdx }) => {
   const { headings, bodyItems, tableSort, headerStyle, table } = attributes;
   const [ascendingOrder, setAscendingOrder] = useState(true);
@@ -219,7 +219,7 @@ const Table = ({ attributes, setAttributes, setFirstIdx }) => {
           className="bpdt-data-table-addRow"
         >
           <button>
-            {plusIcon}
+            <PlusIcon style={{margin:"0px"}} />
           </button>
         </div>
       </div>

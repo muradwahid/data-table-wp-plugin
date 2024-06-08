@@ -1,16 +1,15 @@
-import { InspectorControls } from '@wordpress/block-editor';
-import { Fragment, useEffect, useState } from 'react';
-import TabPanel from './Components/Panel/TabPanel/TabPanel';
-import ContentSetting from './Components/Settings/ContentSetting/ContentSetting';
-import StyleSettings from './Components/Settings/StyleSettings/StyleSettings';
-import Table from './Components/theme/Table/Table';
-import Style from './Components/Style/Style';
+import { InspectorControls } from "@wordpress/block-editor";
+import { Fragment, useEffect, useState } from "react";
+import TabPanel from "./Components/Panel/TabPanel/TabPanel";
+import ContentSetting from "./Components/Settings/ContentSetting/ContentSetting";
+import StyleSettings from "./Components/Settings/StyleSettings/StyleSettings";
+import Style from "./Components/Style/Style";
+import Table from "./Components/theme/Table/Table";
 const Edit = (props) => {
   const { className, setAttributes, attributes, clientId } = props;
   const { cId } = attributes;
   const [firstIdx, setFirstIdx] = useState(0);
-  const [tab, setTab] = useState('content');
-
+  const [tab, setTab] = useState("content");
   useEffect(() => {
     clientId && setAttributes({ cId: clientId.substring(0, 10) });
   }, [clientId]); // Set & Update clientId to cId
@@ -21,13 +20,13 @@ const Edit = (props) => {
         <TabPanel tab={tab} setTab={setTab} />
       </InspectorControls>
       <InspectorControls>
-        {tab === 'style' && (
+        {tab === "style" && (
           <StyleSettings
             attributes={attributes}
             setAttributes={setAttributes}
           />
         )}
-        {tab === 'content' && (
+        {tab === "content" && (
           <ContentSetting
             firstIdx={firstIdx}
             attributes={attributes}

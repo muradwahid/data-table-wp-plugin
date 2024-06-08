@@ -1,16 +1,29 @@
 /* eslint-disable no-unused-vars */
 import { Editor } from '@tinymce/tinymce-react';
+import { useEffect, useRef, useState } from 'react';
+import "./tinyEditor.css";
 import { MediaUpload, MediaUploadCheck } from '@wordpress/block-editor';
-import { Button } from '@wordpress/components';
-import { useEffect } from '@wordpress/element';
-import { useRef, useState } from 'react';
-import './tinyEditor.scss';
-const TinyEditor = ({ value, onChange = () => {}, height = 180 }) => {
+const { Button } = wp.components;
+
+/**
+ * TinyEditor component.
+ *
+ * @component
+ * @param {Object} props
+ * @param {String} [props.value]
+ * @param {Function} [props.onChange=() => {}]
+ * @param {Number} [props.height=180] - Optional
+ * @returns {JSX.Element}
+ */
+
+export const TinyEditor = (props) => {
+  const { value, onChange = () => { }, height = 180, default: defaults } = props;
   const editorRef = useRef(null);
+  const tinyRef = useRef(null);
   const [media, setMedia] = useState('');
   const [content, setContent] = useState('');
   const [initialValue, setInitialValue] = useState(
-    value || 'This is the initial content of the editor'
+    value || defaults || 'This is the initial content of the editor'
   );
   const log = () => {
     if (editorRef.current) {
@@ -18,10 +31,10 @@ const TinyEditor = ({ value, onChange = () => {}, height = 180 }) => {
     }
   };
   useEffect(() => {
-    const iframe = document?.querySelector('iframe');
+    // const iframe = document?.querySelector('iframe');
     const iframeContent =
-      iframe.contentDocument || iframe.contentWindow.document;
-    const tinymce = iframeContent.querySelector('.mce-content-body');
+      tinyRef.current?.contentDocument || tinyRef.current?.contentWindow?.document;
+    const tinymce = iframeContent?.querySelector('.mce-content-body');
     const createImgEl = document.createElement('img');
     createImgEl.src = media.url;
     createImgEl.style.maxWidth = '100%';
@@ -53,6 +66,7 @@ const TinyEditor = ({ value, onChange = () => {}, height = 180 }) => {
         />
       </MediaUploadCheck>
       <Editor
+        ref={tinyRef}
         apiKey="d1lxc40qcx6ad71i4bn1ih4d8l8oalalg9efymoc5l3ay9qo"
         onChange={(evt, editor) => setContent(editor.getContent())}
         onInit={(evt, editor) => (editorRef.current = editor)}
@@ -76,5 +90,3 @@ const TinyEditor = ({ value, onChange = () => {}, height = 180 }) => {
     </div>
   );
 };
-
-export default TinyEditor;
